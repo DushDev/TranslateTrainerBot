@@ -1,2 +1,2 @@
-# TodoNodeBot
-todo bot
+# Translate trainer bot
+
