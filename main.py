@@ -1,5 +1,9 @@
 import telebot
-bot = telebot.TeleBot("6492917074:AAH3f6MPYHEM-z7yN4PoS-kbTGE77YgSWXs")
+from dotenv import dotenv_values
+
+secrets = dotenv_values(".env")
+
+bot = telebot.TeleBot(secrets['BOT_TOKEN'])
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
